@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hrm-eureka
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单机配置

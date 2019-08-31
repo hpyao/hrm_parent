@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_basic_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_mybatisplus_gen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_support_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_support_parent/hrm_eureka_7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_sysmanage_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_service" charset="UTF-8" />
+  </component>
+</project>

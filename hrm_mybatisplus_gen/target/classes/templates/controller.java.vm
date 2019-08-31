@@ -1,0 +1,88 @@
+package ${package.Controller};
+
+import ${package.Service}.${table.serviceName};
+import ${package.Entity}.${entity};
+import cn.itsource.hrm.query.${entity}Query;
+import cn.itsource.hrm.util.AjaxResult;
+import cn.itsource.hrm.util.PageList;
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/${table.entityPath}")
+public class ${entity}Controller {
+    @Autowired
+    public ${table.serviceName} ${table.entityPath}Service;
+
+    /**
+    * 保存和修改公用的
+    * @param ${table.entityPath}  传递的实体
+    * @return Ajaxresult转换结果
+    */
+    @RequestMapping(value="/save",method= RequestMethod.POST)
+    public AjaxResult save(@RequestBody ${entity} ${table.entityPath}){
+        try {
+            if(${table.entityPath}.getId()!=null){
+                ${table.entityPath}Service.updateById(${table.entityPath});
+            }else{
+                ${table.entityPath}Service.insert(${table.entityPath});
+            }
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setMessage("保存对象失败！"+e.getMessage());
+        }
+    }
+
+    /**
+    * 删除对象信息
+    * @param id
+    * @return
+    */
+    @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
+    public AjaxResult delete(@PathVariable("id") Long id){
+        try {
+            ${table.entityPath}Service.deleteById(id);
+            return AjaxResult.me();
+        } catch (Exception e) {
+        e.printStackTrace();
+            return AjaxResult.me().setMessage("删除对象失败！"+e.getMessage());
+        }
+    }
+
+    //获取用户
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public ${entity} get(@PathVariable("id")Long id)
+    {
+        return ${table.entityPath}Service.selectById(id);
+    }
+
+
+    /**
+    * 查看所有的员工信息
+    * @return
+    */
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public List<${entity}> list(){
+
+        return ${table.entityPath}Service.selectList(null);
+    }
+
+
+    /**
+    * 分页查询数据
+    *
+    * @param query 查询对象
+    * @return PageList 分页对象
+    */
+    @RequestMapping(value = "/json",method = RequestMethod.POST)
+    public PageList<${entity}> json(@RequestBody ${entity}Query query)
+    {
+        Page<${entity}> page = new Page<${entity}>(query.getPage(),query.getRows());
+            page = ${table.entityPath}Service.selectPage(page);
+            return new PageList<${entity}>(page.getTotal(),page.getRecords());
+    }
+}
