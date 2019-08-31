@@ -14,6 +14,7 @@
     <modules>
         <module>hrm_eureka_7001</module>
         <module>hrm_zuul_9527</module>
+        <module>hrm_config_server_8848</module>
     </modules>
 
 

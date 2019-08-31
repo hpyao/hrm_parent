@@ -1,8 +1,15 @@
-server:
-  port: 9527
 spring:
-  application:
-    name: zuul-gateway
+  cloud:
+    config:
+      #uri: http://localhost:8848 #配置configserver单个服务器
+      discovery:
+        enabled: true
+        service-id: config-server # 从Eureka通过服务名获取多个配置服务
+      label: master #分支
+      name: application-zuul #那个文件
+      profile: ${spring.profiles.active} # 那个环境
+  profiles:
+    active: dev
 eureka:
   client:
     service-url:
@@ -10,23 +17,3 @@ eureka:
   instance:
     instance-id: gateway-9527.com
     prefer-ip-address: true
-zuul:
-  routes:
-    sysmanage.serviceId: hrm-sysmanage # 服务名
-    sysmanage.path: /sysmanage/** # 把myUser打头的所有请求都转发给user-provider
-  ignored-services: "*" #所有服务都不允许以服务名来访问
-  prefix: "/services" #加一个统一前缀
-  retryable: true #是否重试
-ribbon:
-  ConnectTimeout: 250 # 连接超时时间(ms)
-  ReadTimeout: 2000 # 通信超时时间(ms)
-  OkToRetryOnAllOperations: true # 是否对所有操作重试
-  MaxAutoRetriesNextServer: 2 # 同一服务不同实例的重试次数
-  MaxAutoRetries: 1 # 同一实例的重试次数
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMillisecond: 3000 # 熔断超时时长：3000ms
