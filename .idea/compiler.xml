@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hrm_basic_util" />
         <module name="hrm_config_server_8848" />
+        <module name="hrm_course_interface" />
+        <module name="hrm_course_service_9002" />
         <module name="hrm_eureka_7001" />
         <module name="hrm_mybatisplus_gen" />
         <module name="hrm_sysmanage_interface" />
@@ -19,6 +21,9 @@
       <module name="hrm_basic_parent" target="1.8" />
       <module name="hrm_basic_util" target="1.8" />
       <module name="hrm_config_server_8848" target="1.8" />
+      <module name="hrm_course_interface" target="1.8" />
+      <module name="hrm_course_parent" target="1.8" />
+      <module name="hrm_course_service_9002" target="1.8" />
       <module name="hrm_eureka_7001" target="1.8" />
       <module name="hrm_mybatisplus_gen" target="1.8" />
       <module name="hrm_parent" target="1.8" />

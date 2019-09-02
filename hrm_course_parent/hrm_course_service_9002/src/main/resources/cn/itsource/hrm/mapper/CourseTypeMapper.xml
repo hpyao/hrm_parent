@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itsource.hrm.mapper.CourseTypeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.itsource.hrm.domain.CourseType">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="pid" property="pid" />
+        <result column="logo" property="logo" />
+        <result column="description" property="description" />
+        <result column="sortIndex" property="sortIndex" />
+        <result column="path" property="path" />
+        <result column="totalCount" property="totalCount" />
+    </resultMap>
+
+    <sql id="whereSql">
+        <where>
+            <if test="query.keyword!=null and query.keyword!=''">
+                and (ct.name like concat('%',#{query.keyword},'%') or ct.description like concat('%',#{query.keyword},'%'))
+            </if>
+        </where>
+    </sql>
+    <select id="loadListPage" resultMap="CourseTypeMap" parameterType="CourseTypeQuery">
+        SELECT
+            ct.*, pct.id ppid,
+            pct. NAME pname
+        FROM
+            t_course_type ct
+        LEFT JOIN t_course_type pct ON ct.pid = pct.id
+        <include refid="whereSql"></include>
+    </select>
+
+    <resultMap id="CourseTypeMap" type="CourseType">
+        <id column="id" property="id" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="pid" property="pid" />
+        <result column="logo" property="logo" />
+        <result column="description" property="description" />
+        <result column="sortIndex" property="sortIndex" />
+        <result column="path" property="path" />
+        <result column="totalCount" property="totalCount" />
+        <association property="parent" javaType="CourseType">
+            <id column="ppid" property="id" />
+            <result column="pname" property="name" />
+        </association>
+    </resultMap>
+
+</mapper>

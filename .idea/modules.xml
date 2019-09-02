@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util/hrm_basic_util.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util/hrm_basic_util.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_support_parent/hrm_config_server_8848/hrm_config_server_8848.iml" filepath="$PROJECT_DIR$/hrm_support_parent/hrm_config_server_8848/hrm_config_server_8848.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_interface/hrm_course_interface.iml" filepath="$PROJECT_DIR$/hrm_course_parent/hrm_course_interface/hrm_course_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_parent.iml" filepath="$PROJECT_DIR$/hrm_course_parent/hrm_course_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/hrm_course_service_9002.iml" filepath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/hrm_course_service_9002.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_support_parent/hrm_eureka_7001/hrm_eureka_7001.iml" filepath="$PROJECT_DIR$/hrm_support_parent/hrm_eureka_7001/hrm_eureka_7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_mybatisplus_gen/hrm_mybatisplus_gen.iml" filepath="$PROJECT_DIR$/hrm_mybatisplus_gen/hrm_mybatisplus_gen.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_parent.iml" filepath="$PROJECT_DIR$/hrm_parent.iml" />
