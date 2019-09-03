@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itsource.hrm.mapper.CourseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.itsource.hrm.domain.Course">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="users" property="users" />
+        <result column="course_type_id" property="courseTypeId" />
+        <result column="grade" property="grade" />
+        <result column="status" property="status" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenantName" property="tenantName" />
+        <result column="user_id" property="userId" />
+        <result column="userName" property="userName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+    </resultMap>
+     <!--name users tenantName userName-->
+    <sql id="whereSql" >
+       <where>
+           <if test="query.keyword!=null and query.keyword!=''">
+               and (
+                c.name like concat('%',#{query.keyword},'%') or
+                c.users like concat('%',#{query.keyword},'%') or
+                c.tenantName like concat('%',#{query.keyword},'%') or
+                c.userName like concat('%',#{query.keyword},'%')
+               )
+           </if>
+       </where>
+    </sql>
+    <!--List<Course> loadListPage(@Param("query") CourseQuery query);-->
+    <select id="loadListPage" resultMap="CourseMap" parameterType="CourseQuery">
+        SELECT
+            c.*, ct.id tid,
+            ct.`name` cname
+        FROM
+            t_course c
+        LEFT JOIN t_course_type ct ON c.course_type_id = ct.id
+        <include refid="whereSql"></include>
+    </select>
+
+    <resultMap id="CourseMap" type="Course">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="users" property="users" />
+        <result column="course_type_id" property="courseTypeId" />
+        <result column="grade" property="grade" />
+        <result column="status" property="status" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenantName" property="tenantName" />
+        <result column="user_id" property="userId" />
+        <result column="userName" property="userName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <association property="courseType" javaType="CourseType">
+            <id column="tid" property="id" />
+            <result column="cname" property="name" />
+        </association>
+    </resultMap>
+
+</mapper>

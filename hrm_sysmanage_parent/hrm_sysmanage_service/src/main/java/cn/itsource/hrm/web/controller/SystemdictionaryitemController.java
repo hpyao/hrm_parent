@@ -1,5 +1,7 @@
 package cn.itsource.hrm.web.controller;
 
+import cn.itsource.hrm.domain.Systemdictionary;
+import cn.itsource.hrm.mapper.SystemdictionaryMapper;
 import cn.itsource.hrm.service.ISystemdictionaryitemService;
 import cn.itsource.hrm.domain.Systemdictionaryitem;
 import cn.itsource.hrm.query.SystemdictionaryitemQuery;
@@ -14,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/systemdictionaryitem")
 public class SystemdictionaryitemController {
+
     @Autowired
     public ISystemdictionaryitemService systemdictionaryitemService;
 
@@ -71,6 +74,16 @@ public class SystemdictionaryitemController {
         return systemdictionaryitemService.selectList(null);
     }
 
+
+    /**
+     * 查看所有的员工信息
+     * @return
+     */
+    @RequestMapping(value = "/listSn",method = RequestMethod.GET)
+    public List<Systemdictionaryitem> listByParentSn(String sn){
+
+        return systemdictionaryitemService.listByParentSn(sn);
+    }
 
     /**
     * 分页查询数据
