@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hrm_basic_fastdfs_interface" />
+        <module name="hrm_basic_fastdfs_service_9003" />
         <module name="hrm_basic_util" />
         <module name="hrm_config_server_8848" />
         <module name="hrm_course_interface" />
@@ -18,6 +20,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hrm_basic_fastdfs_interface" target="1.8" />
+      <module name="hrm_basic_fastdfs_service_9003" target="1.8" />
       <module name="hrm_basic_parent" target="1.8" />
       <module name="hrm_basic_util" target="1.8" />
       <module name="hrm_config_server_8848" target="1.8" />

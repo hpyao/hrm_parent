@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>hrm_basic_util</module>
+        <module>hrm_basic_fastdfs_interface</module>
+        <module>hrm_basic_fastdfs_service_9003</module>
     </modules>
 
 

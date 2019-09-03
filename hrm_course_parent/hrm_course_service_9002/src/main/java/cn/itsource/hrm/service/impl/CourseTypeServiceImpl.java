@@ -5,6 +5,7 @@ import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.service.ICourseTypeService;
 import cn.itsource.hrm.util.PageList;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 
     @Override
     public PageList<CourseType> selectListPage(CourseTypeQuery query) {
-        Pagination page = new Pagination(); //Page
+        Page page = new Page(query.getPage(),query.getRows()); //Page
         List<CourseType> courseTypes = courseTypeMapper.loadListPage(page, query);
         return new PageList<>(page.getTotal(),courseTypes);
     }

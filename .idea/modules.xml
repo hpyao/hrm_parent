@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util/hrm_basic_util.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util/hrm_basic_util.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_support_parent/hrm_config_server_8848/hrm_config_server_8848.iml" filepath="$PROJECT_DIR$/hrm_support_parent/hrm_config_server_8848/hrm_config_server_8848.iml" />

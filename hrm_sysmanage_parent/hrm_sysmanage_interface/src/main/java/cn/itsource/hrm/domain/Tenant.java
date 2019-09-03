@@ -8,6 +8,8 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.util.FileCopyUtils;
+
 import java.io.Serializable;
 
 /**
@@ -50,6 +52,7 @@ public class Tenant extends Model<Tenant> {
                 maps.add(map);
             }
         }
+
         return maps;
     }
 
