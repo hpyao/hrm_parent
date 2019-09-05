@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //Spring boot方式:配置分页插件
 @EnableTransactionManagement
 @Configuration
-@MapperScan(" cn.itsource.hrm.mapper")
+@MapperScan("cn.itsource.hrm.mapper")
 public class MybatisPlusConfig {
 
     @Bean

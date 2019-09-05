@@ -60,4 +60,22 @@
         </association>
     </resultMap>
 
+    <!--void batchOnline(List<Map<String, Object>> idsMap);-->
+    <!--update t_course set status = 1,start_time=xxx where id in (1,2,3)-->
+    <update id="batchOnline" parameterType="arrayList">
+        UPDATE t_course set status =1,start_time=now() where id IN
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
+
+    <!--void batchOffline(List<Long> longs);-->
+    <update id="batchOffline" parameterType="arrayList">
+        UPDATE t_course set status =0,end_time=now() where id IN
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
+
+
 </mapper>

@@ -21,4 +21,16 @@ public interface ICourseService extends IService<Course> {
      * @return
      */
     PageList<Course> selectListPage(CourseQuery query);
+
+    /**
+     * 上线
+     * @param ids
+     */
+    void onLine(Long[] ids);
+
+    /**
+     *
+     * @param ids
+     */
+    void offLine(Long[] ids);
 }

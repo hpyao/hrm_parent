@@ -15,6 +15,8 @@
         <module>hrm_basic_util</module>
         <module>hrm_basic_fastdfs_interface</module>
         <module>hrm_basic_fastdfs_service_9003</module>
+        <module>hrm_basic_es_interface</module>
+        <module>hrm_basic_es_service_9004</module>
     </modules>
 
 
