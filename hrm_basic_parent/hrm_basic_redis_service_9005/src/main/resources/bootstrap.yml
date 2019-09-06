@@ -1,0 +1,11 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: hrm-redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
