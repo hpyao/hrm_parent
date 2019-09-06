@@ -47,7 +47,7 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
     }
 
     @Override
-    public List<CourseType> queryTypeTree(Long pid) {
+    public List<CourseType> queryTypeTree(Long pid) { // -1
 
         List<CourseType> courseTypes = courseTypeCache.getCourseTypes();
         if (courseTypes== null || courseTypes.size()<1){
@@ -56,7 +56,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
             // return getCourseTypesRecursion(pid);
             //循环
             List<CourseType> courseTypesDb = getCourseTypesLoop(pid);
-            courseTypeCache.setCourseTypes(courseTypesDb);
+            if (courseTypesDb==null|| courseTypesDb.size()<1)
+                courseTypesDb = new ArrayList<>();
+            courseTypeCache.setCourseTypes(courseTypesDb);//[]
             return courseTypesDb;
         }
 
