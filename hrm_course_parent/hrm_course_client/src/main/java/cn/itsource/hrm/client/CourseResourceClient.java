@@ -12,7 +12,7 @@ import java.util.List;
 
 @FeignClient(value = "ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
         fallbackFactory = CourseResourceClientHystrixFallbackFactory.class)
-@RequestMapping("/user/courseResource")
+@RequestMapping("/courseResource")
 public interface CourseResourceClient {
     /**
      * 保存和修改公用的
@@ -32,7 +32,7 @@ public interface CourseResourceClient {
 
     //获取用户
     @RequestMapping("/{id}")
-    CourseResource get(@RequestParam(value="id",required=true) Long id);
+    CourseResource get(@RequestParam(value = "id", required = true) Long id);
 
 
     /**

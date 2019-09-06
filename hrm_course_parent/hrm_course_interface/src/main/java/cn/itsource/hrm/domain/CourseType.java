@@ -8,6 +8,8 @@ import com.baomidou.mybatisplus.annotations.TableName;
 import org.apache.ibatis.annotations.Insert;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -53,6 +55,9 @@ public class CourseType extends Model<CourseType> {
      * 商品数量
      */
     private Integer totalCount;
+
+    @TableField(exist = false) //用来存放儿子
+    private List<CourseType> children = new ArrayList<>();
 
 
     public Long getId() {
@@ -146,6 +151,14 @@ public class CourseType extends Model<CourseType> {
 
     public void setParent(CourseType parent) {
         this.parent = parent;
+    }
+
+    public List<CourseType> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<CourseType> children) {
+        this.children = children;
     }
 
     @Override

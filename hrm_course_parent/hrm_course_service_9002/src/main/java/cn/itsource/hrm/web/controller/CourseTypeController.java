@@ -89,4 +89,14 @@ public class CourseTypeController {
 //            return new PageList<CourseType>(page.getTotal(),page.getRecords());
         return courseTypeService.selectListPage(query);
     }
+
+    /**
+     * 查看所有的员工信息
+     * @return
+     */
+    @RequestMapping(value = "/treeData",method = RequestMethod.GET)
+    public List<CourseType> treeData(){
+
+        return courseTypeService.queryTypeTree(0L);
+    }
 }

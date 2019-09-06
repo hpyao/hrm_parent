@@ -5,13 +5,19 @@ import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.service.ICourseTypeService;
 import cn.itsource.hrm.util.PageList;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import static sun.security.krb5.Confounder.longValue;
 
 /**
  * <p>
@@ -32,5 +38,78 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         Page page = new Page(query.getPage(),query.getRows()); //Page
         List<CourseType> courseTypes = courseTypeMapper.loadListPage(page, query);
         return new PageList<>(page.getTotal(),courseTypes);
+    }
+
+    @Override
+    public List<CourseType> queryTypeTree(Long pid) {
+        //递归
+        // return getCourseTypesRecursion(pid);
+        //循环
+        return getCourseTypesLoop(pid);
+    }
+
+
+    /**
+     * 方案2:循环方案:一次sql
+     * @param pid 0
+     * @return
+     */
+    private List<CourseType> getCourseTypesLoop(Long pid) { //0
+        List<CourseType> result = new ArrayList<>();
+        //1 查询所有类型
+        List<CourseType> allTypes = courseTypeMapper.selectList(null);
+
+        //建立id和CourseType的关联关系
+        Map<Long,CourseType> allTypesDto = new HashMap<>();
+        for (CourseType allType : allTypes) {
+            allTypesDto.put(allType.getId(),allType);
+        }
+        //2 遍历判断是否是第一级  pid为传入id,
+        for (CourseType type : allTypes) {
+            Long pidTmp = type.getPid();
+            //2.1是直接加入返回列表
+            if (pidTmp.longValue()== pid.longValue()){
+                result.add(type);
+            }else{
+                //2.2不是要把自己作为父亲儿子
+                    //通过pid获取父亲
+                    //方案1:遍历所有,通过父亲id来获取父亲
+                    /*
+                    for (CourseType courseType : allTypes) {
+                        if(courseType.getId().longValue() == pidTmp.longValue()){
+                            courseType.getChildren().add(type);
+                        }
+
+                    }*/
+                    //方案2:通过map获取
+                    CourseType parent = allTypesDto.get(pidTmp);
+                    //获取父亲儿子集合,把自己加进去
+                    parent.getChildren().add(type);
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * 方案1:递归,每次都要发送sql效率低下
+     * @param pid
+     * @return
+     */
+    private List<CourseType> getCourseTypesRecursion(Long pid) {
+        //方案1:递归-自己调用自己,要有出口
+        List<CourseType> children = courseTypeMapper
+                .selectList(new EntityWrapper<CourseType>().eq("pid", pid));
+        //要有出口
+        if (children==null || children.size()<1)
+        {
+            return null;
+        }
+        for (CourseType child : children) {
+            //自己调用自己
+            List<CourseType> courseTypes = queryTypeTree(child.getId());
+            child.setChildren(courseTypes);
+        }
+        return children;
     }
 }

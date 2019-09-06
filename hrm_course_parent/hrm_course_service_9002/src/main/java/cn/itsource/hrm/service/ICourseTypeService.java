@@ -5,6 +5,8 @@ import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.util.PageList;
 import com.baomidou.mybatisplus.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 课程目录 服务类
@@ -21,4 +23,12 @@ public interface ICourseTypeService extends IService<CourseType> {
      * @return
      */
     PageList<CourseType> selectListPage(CourseTypeQuery query);
+
+
+    /**
+     * 通过父亲id获取儿子,及其儿子的儿子等子子孙孙
+     * @param pid
+     * @return
+     */
+    List<CourseType> queryTypeTree(Long pid);
 }

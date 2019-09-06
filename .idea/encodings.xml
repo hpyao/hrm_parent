@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_course_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_mybatisplus_gen" charset="UTF-8" />

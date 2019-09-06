@@ -1,7 +1,7 @@
 package cn.itsource.hrm.client;
 
-import cn.itsource.hrm.domain.CourseDetail;
-import cn.itsource.hrm.query.CourseDetailQuery;
+import cn.itsource.hrm.domain.CourseType;
+import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.util.AjaxResult;
 import cn.itsource.hrm.util.PageList;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @FeignClient(value = "ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
-        fallbackFactory = CourseDetailClientHystrixFallbackFactory.class)
-@RequestMapping("/user/courseDetail")
-public interface CourseDetailClient {
+        fallbackFactory = CourseTypeClientHystrixFallbackFactory.class)
+@RequestMapping("/courseType")
+public interface CourseTypeClient {
     /**
      * 保存和修改公用的
-     * @param courseDetail  传递的实体
+     * @param courseType  传递的实体
      * @return Ajaxresult转换结果
      */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    AjaxResult save(CourseDetail courseDetail);
+    AjaxResult save(CourseType courseType);
 
     /**
      * 删除对象信息
@@ -32,7 +32,7 @@ public interface CourseDetailClient {
 
     //获取用户
     @RequestMapping("/{id}")
-    CourseDetail get(@RequestParam(value="id",required=true) Long id);
+    CourseType get(@RequestParam(value = "id", required = true) Long id);
 
 
     /**
@@ -40,7 +40,7 @@ public interface CourseDetailClient {
      * @return
      */
     @RequestMapping("/list")
-    public List<CourseDetail> list();
+    public List<CourseType> list();
 
     /**
      * 分页查询数据
@@ -49,5 +49,5 @@ public interface CourseDetailClient {
      * @return PageList 分页对象
      */
     @RequestMapping(value = "/json",method = RequestMethod.POST)
-    PageList<CourseDetail> json(@RequestBody CourseDetailQuery query);
+    PageList<CourseType> json(@RequestBody CourseTypeQuery query);
 }

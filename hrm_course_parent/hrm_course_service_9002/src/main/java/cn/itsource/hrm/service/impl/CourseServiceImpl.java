@@ -1,6 +1,5 @@
 package cn.itsource.hrm.service.impl;
 
-import cn.itsource.hrm.client.CourseClient;
 import cn.itsource.hrm.client.EsCourseClient;
 import cn.itsource.hrm.doc.EsCourse;
 import cn.itsource.hrm.domain.Course;

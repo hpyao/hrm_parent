@@ -12,6 +12,7 @@
         <module name="hrm_basic_fastdfs_service_9003" />
         <module name="hrm_basic_util" />
         <module name="hrm_config_server_8848" />
+        <module name="hrm_course_client" />
         <module name="hrm_course_interface" />
         <module name="hrm_course_service_9002" />
         <module name="hrm_eureka_7001" />
@@ -29,6 +30,7 @@
       <module name="hrm_basic_parent" target="1.8" />
       <module name="hrm_basic_util" target="1.8" />
       <module name="hrm_config_server_8848" target="1.8" />
+      <module name="hrm_course_client" target="1.8" />
       <module name="hrm_course_interface" target="1.8" />
       <module name="hrm_course_parent" target="1.8" />
       <module name="hrm_course_service_9002" target="1.8" />
