@@ -1,5 +1,7 @@
 package cn.itsource.hrm.service.impl;
 
+import cn.itsource.hrm.cache.CourseTypeCache;
+import cn.itsource.hrm.client.RedisClient;
 import cn.itsource.hrm.domain.CourseType;
 import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.query.CourseTypeQuery;
@@ -12,6 +14,7 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -33,6 +36,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
     @Autowired
     private CourseTypeMapper courseTypeMapper;
 
+    @Autowired
+    private CourseTypeCache courseTypeCache;
+
     @Override
     public PageList<CourseType> selectListPage(CourseTypeQuery query) {
         Page page = new Page(query.getPage(),query.getRows()); //Page
@@ -42,10 +48,21 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 
     @Override
     public List<CourseType> queryTypeTree(Long pid) {
-        //递归
-        // return getCourseTypesRecursion(pid);
-        //循环
-        return getCourseTypesLoop(pid);
+
+        List<CourseType> courseTypes = courseTypeCache.getCourseTypes();
+        if (courseTypes== null || courseTypes.size()<1){
+            System.out.println("db...............");
+            //递归
+            // return getCourseTypesRecursion(pid);
+            //循环
+            List<CourseType> courseTypesDb = getCourseTypesLoop(pid);
+            courseTypeCache.setCourseTypes(courseTypesDb);
+            return courseTypesDb;
+        }
+
+        System.out.println("cache...............");
+        return  courseTypes;
+
     }
 
 
@@ -111,5 +128,29 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
             child.setChildren(courseTypes);
         }
         return children;
+    }
+
+    @Override
+    public boolean insert(CourseType entity) {
+        courseTypeMapper.insert(entity);
+        List<CourseType> courseTypes = queryTypeTree(0L);
+        courseTypeCache.setCourseTypes(courseTypes);
+        return true;
+    }
+
+    @Override
+    public boolean deleteById(Serializable id) {
+        courseTypeMapper.deleteById(id);
+        List<CourseType> courseTypes = queryTypeTree(0L);
+        courseTypeCache.setCourseTypes(courseTypes);
+        return true;
+    }
+
+    @Override
+    public boolean updateById(CourseType entity) {
+        courseTypeMapper.updateById(entity);
+        List<CourseType> courseTypes = queryTypeTree(0L);
+        courseTypeCache.setCourseTypes(courseTypes);
+        return true;
     }
 }

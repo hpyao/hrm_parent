@@ -12,7 +12,7 @@
     <artifactId>hrm_course_parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hrm_course_interface</module>
+        <module>hrm_course_common</module>
         <module>hrm_course_service_9002</module>
         <module>hrm_course_client</module>
     </modules>

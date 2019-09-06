@@ -11,3 +11,6 @@
 /hrm_basic_parent/hrm_basic_fastdfs_service_9003/target
 /hrm_basic_parent/hrm_basic_fastdfs_interface/target
 /hrm_course_parent/hrm_course_interface/target
+/hrm_basic_parent/hrm_basic_redis_client/target
+/hrm_basic_parent/hrm_basic_redis_service_9005/target
+/hrm_basic_parent/hrm_basic_redis_common/target
