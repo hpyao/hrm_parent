@@ -1,7 +1,7 @@
 package cn.itsource.hrm.client;
 
-import ${package.Entity}.${entity};
-import cn.itsource.hrm.query.${entity}Query;
+import cn.itsource.hrm.domain.Site;
+import cn.itsource.hrm.query.SiteQuery;
 import cn.itsource.hrm.util.AjaxResult;
 import cn.itsource.hrm.util.PageList;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @FeignClient(value = "ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
-        fallbackFactory = ${entity}ClientHystrixFallbackFactory.class)
-@RequestMapping("/${table.entityPath}")
-public interface ${entity}Client {
+        fallbackFactory = SiteClientHystrixFallbackFactory.class)
+@RequestMapping("/site")
+public interface SiteClient {
     /**
      * 保存和修改公用的
-     * @param ${table.entityPath}  传递的实体
+     * @param site  传递的实体
      * @return Ajaxresult转换结果
      */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    AjaxResult save(${entity} ${table.entityPath});
+    AjaxResult save(Site site);
 
     /**
      * 删除对象信息
@@ -32,7 +32,7 @@ public interface ${entity}Client {
 
     //获取用户
     @RequestMapping("/{id}")
-    ${entity} get(@RequestParam(value="id",required=true) Long id);
+    Site get(@RequestParam(value="id",required=true) Long id);
 
 
     /**
@@ -40,7 +40,7 @@ public interface ${entity}Client {
      * @return
      */
     @RequestMapping("/list")
-    public List<${entity}> list();
+    public List<Site> list();
 
     /**
      * 分页查询数据
@@ -49,5 +49,5 @@ public interface ${entity}Client {
      * @return PageList 分页对象
      */
     @RequestMapping(value = "/json",method = RequestMethod.POST)
-    PageList<${entity}> json(@RequestBody ${entity}Query query);
+    PageList<Site> json(@RequestBody SiteQuery query);
 }

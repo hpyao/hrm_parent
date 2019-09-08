@@ -8,7 +8,7 @@ spring:
         enabled: true
         service-id: config-server # 从Eureka通过服务名获取多个配置服务
       label: master #分支
-      name: application-course #那个文件
+      name: application-page #那个文件
       profile: ${spring.profiles.active} # 那个环境
 eureka:
   client:

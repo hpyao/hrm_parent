@@ -14,3 +14,5 @@
 /hrm_basic_parent/hrm_basic_redis_client/target
 /hrm_basic_parent/hrm_basic_redis_service_9005/target
 /hrm_basic_parent/hrm_basic_redis_common/target
+/hrm_page_parent/hrm_page_common/target
+/hrm_page_parent/hrm_page_service_9006/target

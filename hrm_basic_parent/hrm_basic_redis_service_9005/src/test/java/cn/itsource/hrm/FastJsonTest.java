@@ -1,4 +1,4 @@
-package cn.itsource.hrm;
+/*package cn.itsource.hrm;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -37,4 +37,4 @@ public class FastJsonTest {
 
 
     }
-}
+}*/
