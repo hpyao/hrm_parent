@@ -16,6 +16,10 @@
     <file url="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_mybatisplus_gen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_page_agent_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_page_parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_page_parent/hrm_page_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_page_parent/hrm_page_common" charset="UTF-8" />

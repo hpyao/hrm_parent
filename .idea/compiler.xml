@@ -21,6 +21,10 @@
         <module name="hrm_course_service_9002" />
         <module name="hrm_eureka_7001" />
         <module name="hrm_mybatisplus_gen" />
+        <module name="hrm_page_agent_client" />
+        <module name="hrm_page_agent_common" />
+        <module name="hrm_page_agent_parent" />
+        <module name="hrm_page_agent_service_9007" />
         <module name="hrm_page_client" />
         <module name="hrm_page_common" />
         <module name="hrm_page_parent" />
@@ -50,6 +54,10 @@
       <module name="hrm_course_service_9002" target="1.8" />
       <module name="hrm_eureka_7001" target="1.8" />
       <module name="hrm_mybatisplus_gen" target="1.8" />
+      <module name="hrm_page_agent_client" target="1.8" />
+      <module name="hrm_page_agent_common" target="1.8" />
+      <module name="hrm_page_agent_parent" target="1.8" />
+      <module name="hrm_page_agent_service_9007" target="1.8" />
       <module name="hrm_page_client" target="1.8" />
       <module name="hrm_page_common" target="1.8" />
       <module name="hrm_page_parent" target="1.8" />
