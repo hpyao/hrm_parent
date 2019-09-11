@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-PAGE",configuration = FeignClientsConfiguration.class,
         fallbackFactory = SiteClientHystrixFallbackFactory.class)
 @RequestMapping("/site")
 public interface SiteClient {

@@ -31,4 +31,9 @@ public interface ICourseTypeService extends IService<CourseType> {
      * @return
      */
     List<CourseType> queryTypeTree(Long pid);
+
+    /**
+     *初始化课程站点主页
+     */
+    void InitCourseSiteIndex();
 }

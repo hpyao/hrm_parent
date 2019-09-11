@@ -12,7 +12,6 @@ public class RedisClientFallbackFactory implements FallbackFactory<RedisClient> 
             public void set(String key, String value) {
 
             }
-
             @Override
             public String get(String key) {
                 return null;

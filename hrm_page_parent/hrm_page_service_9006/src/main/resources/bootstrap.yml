@@ -16,6 +16,12 @@ eureka:
       defaultZone: http://localhost:7001/eureka
   instance:
     prefer-ip-address: true
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+  virtualHost: /
 ribbon:
   ConnectTimeout: 250 # 连接超时时间(ms)
   ReadTimeout: 2000 # 通信超时时间(ms)

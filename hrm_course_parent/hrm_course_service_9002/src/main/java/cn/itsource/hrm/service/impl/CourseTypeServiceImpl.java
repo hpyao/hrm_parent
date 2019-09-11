@@ -1,18 +1,27 @@
 package cn.itsource.hrm.service.impl;
 
 import cn.itsource.hrm.cache.CourseTypeCache;
+import cn.itsource.hrm.client.PageConfigClient;
+import cn.itsource.hrm.client.PagerClient;
+//import cn.itsource.hrm.client.RedisClient;
 import cn.itsource.hrm.client.RedisClient;
 import cn.itsource.hrm.domain.CourseType;
+import cn.itsource.hrm.domain.PageConfig;
 import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.service.ICourseTypeService;
 import cn.itsource.hrm.util.PageList;
+import com.alibaba.fastjson.JSONArray;
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import rx.internal.util.unsafe.MpmcArrayQueue;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -38,6 +47,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 
     @Autowired
     private CourseTypeCache courseTypeCache;
+
+    @Autowired
+    private RedisClient redisClient;
 
     @Override
     public PageList<CourseType> selectListPage(CourseTypeQuery query) {
@@ -65,6 +77,26 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         System.out.println("cache...............");
         return  courseTypes;
 
+    }
+
+    @Autowired
+    private PageConfigClient pageConfigClient;
+    @Override
+    public void InitCourseSiteIndex() {
+        //1 准备模板,并且上传fastdfs
+        //2存放数据到redis
+        List<CourseType> courseTypes = queryTypeTree(0L);
+        String dataKey = "courseTypes";
+        redisClient.set(dataKey, JSONArray.toJSONString(courseTypes));
+        //3调用静态化接口产生静态页面,并且放入fastdfs
+        PageConfig pageConfig = new PageConfig();
+        String pageName = "CourseIndex";
+        //本来应该通过PageName获取page后设置pageconfig传递,由于数据在查询端,还不如直接传入pageName到那边查询.
+        Map<String,String> map = new HashMap<>();
+        map.put("dataKey",dataKey);
+        map.put("pageName",pageName);
+        pageConfigClient.staticPage(map);
+        //4往消息队列放一个消息,让pageAgent来下载静态页面
     }
 
 

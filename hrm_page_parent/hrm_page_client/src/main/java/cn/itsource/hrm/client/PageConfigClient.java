@@ -9,8 +9,9 @@ import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
-@FeignClient(value = "ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-PAGE",configuration = FeignClientsConfiguration.class,
         fallbackFactory = PageConfigClientHystrixFallbackFactory.class)
 @RequestMapping("/pageConfig")
 public interface PageConfigClient {
@@ -50,4 +51,7 @@ public interface PageConfigClient {
      */
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     PageList<PageConfig> json(@RequestBody PageConfigQuery query);
+
+    @PostMapping("/staticPage")
+    AjaxResult staticPage(Map<String, String> map);
 }

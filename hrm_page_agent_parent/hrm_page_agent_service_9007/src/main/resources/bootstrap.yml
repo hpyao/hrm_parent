@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: hrm-page-agent
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+  virtualHost: /
+  queues:
+    routingKey: hrmHomeSite
 eureka:
   client:
     service-url:

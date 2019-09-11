@@ -20,6 +20,7 @@
         <module>hrm_basic_redis_common</module>
         <module>hrm_basic_redis_client</module>
         <module>hrm_basic_redis_service_9005</module>
+        <module>hrm_basic_rabbitmq</module>
     </modules>
 
 

@@ -10,6 +10,7 @@
         <module name="hrm_basic_es_service_9004" />
         <module name="hrm_basic_fastdfs_interface" />
         <module name="hrm_basic_fastdfs_service_9003" />
+        <module name="hrm_basic_rabbitmq" />
         <module name="hrm_basic_redis_client" />
         <module name="hrm_basic_redis_common" />
         <module name="hrm_basic_redis_service_9005" />
@@ -42,6 +43,7 @@
       <module name="hrm_basic_fastdfs_interface" target="1.8" />
       <module name="hrm_basic_fastdfs_service_9003" target="1.8" />
       <module name="hrm_basic_parent" target="1.8" />
+      <module name="hrm_basic_rabbitmq" target="1.8" />
       <module name="hrm_basic_redis_client" target="1.8" />
       <module name="hrm_basic_redis_common" target="1.8" />
       <module name="hrm_basic_redis_service_9005" target="1.8" />

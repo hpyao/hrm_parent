@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/hrm_basic_rabbitmq.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/hrm_basic_rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_client/hrm_basic_redis_client.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_client/hrm_basic_redis_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_common/hrm_basic_redis_common.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_common/hrm_basic_redis_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/hrm_basic_redis_service_9005.iml" filepath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/hrm_basic_redis_service_9005.iml" />

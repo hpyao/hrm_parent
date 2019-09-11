@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005" charset="UTF-8" />

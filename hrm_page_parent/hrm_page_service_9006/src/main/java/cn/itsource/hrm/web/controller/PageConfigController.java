@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/pageConfig")
@@ -84,5 +85,20 @@ public class PageConfigController {
         Page<PageConfig> page = new Page<PageConfig>(query.getPage(),query.getRows());
             page = pageConfigService.selectPage(page);
             return new PageList<PageConfig>(page.getTotal(),page.getRecords());
+    }
+
+    //页面静态化接口
+    @PostMapping("/staticPage")
+    AjaxResult staticPage(@RequestBody Map<String, String> map){
+        String dataKey = map.get("dataKey");
+        String pageName = map.get("pageName");
+        try {
+            pageConfigService.staticPage(dataKey,pageName);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("静态化失败!"+e.getMessage());
+        }
+
     }
 }

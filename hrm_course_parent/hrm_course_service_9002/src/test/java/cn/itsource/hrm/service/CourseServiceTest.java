@@ -19,6 +19,9 @@ public class CourseServiceTest {
 
     @Autowired
     private ICourseService courseService;
+
+    @Autowired
+    private ICourseTypeService courseTypeService;
     @Test
     public void selectListPage() {
         PageList<Course> pageList = courseService.selectListPage(new CourseQuery());
@@ -31,5 +34,11 @@ public class CourseServiceTest {
         }
     }
 
+
+    //初始化课程管理首页
+    @Test
+    public void testInitCourseSiteIndex()throws Exception{
+        courseTypeService.InitCourseSiteIndex();
+    }
 
 }
