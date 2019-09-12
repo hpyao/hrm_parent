@@ -1,4 +1,5 @@
 package cn.itsource.hrm.client;
+import cn.itsource.hrm.config.FeignMultipartSupportConfig;
 import cn.itsource.hrm.util.AjaxResult;
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -11,14 +12,16 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-//fallbackFactory = CourseTypeClientHystrixFallbackFactory.class
-@FeignClient(value = "HRM-FASTDFS",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-FASTDFS",configuration = FeignMultipartSupportConfig.class,
+//@FeignClient(value = "HRM-FASTDFS",configuration = FeignClientsConfiguration.class,
         fallbackFactory = FastDfsClientHystrixFallbackFactory.class
         )
 @RequestMapping("/fastdfs")
 public interface FastDfsClient {
-    @RequestMapping(value="/upload",method= RequestMethod.POST)
-    String upload(@RequestBody MultipartFile file);
+//    @RequestMapping(value="/upload",method= RequestMethod.POST)
+     @PostMapping(value="/upload", produces = {MediaType.APPLICATION_JSON_UTF8_VALUE}
+             , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    String upload(@RequestPart("file") MultipartFile file);
 
     /**
      * 删除对象信息

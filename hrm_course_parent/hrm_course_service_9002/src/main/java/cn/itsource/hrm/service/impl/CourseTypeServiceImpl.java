@@ -89,7 +89,6 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         String dataKey = "courseTypes";
         redisClient.set(dataKey, JSONArray.toJSONString(courseTypes));
         //3调用静态化接口产生静态页面,并且放入fastdfs
-        PageConfig pageConfig = new PageConfig();
         String pageName = "CourseIndex";
         //本来应该通过PageName获取page后设置pageconfig传递,由于数据在查询端,还不如直接传入pageName到那边查询.
         Map<String,String> map = new HashMap<>();

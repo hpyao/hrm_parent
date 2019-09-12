@@ -21,9 +21,12 @@ import java.io.OutputStream;
 @RequestMapping("/fastdfs")
 public class FastDfsController {
     Logger logger = LoggerFactory.getLogger(FastDfsController.class);
-    @PostMapping("/upload")
-    public String upload(@RequestParam("file") MultipartFile file) {
+//    @PostMapping("/upload")
+//    public String upload(@RequestParam("file") MultipartFile file) {
 
+    @PostMapping(value="/upload", produces = {MediaType.APPLICATION_JSON_UTF8_VALUE}
+            , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public String upload(@RequestPart("file") MultipartFile file) {
         try {
             String fileName = file.getOriginalFilename(); // 1.png
             String extName = fileName.substring(fileName.lastIndexOf(".")+1);

@@ -10,7 +10,7 @@ rabbitmq:
   password: guest
   virtualHost: /
   queues:
-    routingKey: hrmHomeSite
+    routingKey: hrmCourseSite
 eureka:
   client:
     service-url:

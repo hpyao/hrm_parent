@@ -184,6 +184,9 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:9.5.1" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:9.5.1" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-java8:9.5.1" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form-spring:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="module" module-name="hrm_basic_rabbitmq" />
   </component>

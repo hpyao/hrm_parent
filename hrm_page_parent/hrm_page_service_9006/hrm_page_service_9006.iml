@@ -193,6 +193,9 @@
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
     <orderEntry type="module" module-name="hrm_basic_fastdfs_interface" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form-spring:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.csource:fastdfs-client:1.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.0.5.RELEASE" level="project" />
@@ -204,5 +207,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.9.RELEASE" level="project" />
     <orderEntry type="module" module-name="hrm_basic_rabbitmq" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.58" level="project" />
+    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.3.1" level="project" />
   </component>
 </module>
