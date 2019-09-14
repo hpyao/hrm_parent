@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/course")
@@ -124,5 +125,12 @@ public class CourseController {
             return AjaxResult.me().setSuccess(false)
                     .setMessage("上线失败!"+e.getMessage());
         }
+    }
+
+
+    @PostMapping("/queryCourses")
+    public PageList<Map<String,Object>> queryCourses(@RequestBody Map<String,Object> query){
+        System.out.println(query);
+        return courseService.queryCourses(query);
     }
 }

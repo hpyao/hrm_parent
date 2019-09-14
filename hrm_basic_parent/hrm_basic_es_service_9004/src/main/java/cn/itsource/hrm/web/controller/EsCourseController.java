@@ -5,11 +5,20 @@ import cn.itsource.hrm.service.IEsCourseService;
 import cn.itsource.hrm.query.EsCourseQuery;
 import cn.itsource.hrm.util.AjaxResult;
 import cn.itsource.hrm.util.PageList;
+import org.apache.commons.lang.StringUtils;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.sort.SortBuilders;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/esCourse")
@@ -105,5 +114,11 @@ public class EsCourseController {
             e.printStackTrace();
             return AjaxResult.me().setSuccess(false).setMessage("批量删除失败!"+e.getMessage());
         }
+    }
+
+    @PostMapping("/query")
+    PageList<Map<String,Object>> query(@RequestBody Map<String, Object> params){
+
+        return esCourseService.query(params);
     }
 }

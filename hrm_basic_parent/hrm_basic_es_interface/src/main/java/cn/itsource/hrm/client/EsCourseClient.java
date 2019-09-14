@@ -9,6 +9,7 @@ import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @FeignClient(value = "HRM-ES",configuration = FeignClientsConfiguration.class,
         fallbackFactory = EsCourseClientHystrixFallbackFactory.class)
@@ -56,4 +57,12 @@ public interface EsCourseClient {
 
     @PostMapping("/offline")
     void batchDel(List<EsCourse> esCourseList);
+
+    /**
+     * 从es中查询
+     * @param params
+     * @return
+     */
+    @PostMapping("/query")
+    PageList<Map<String,Object>> query(@RequestBody Map<String, Object> params);
 }

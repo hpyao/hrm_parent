@@ -5,6 +5,8 @@ import cn.itsource.hrm.query.CourseQuery;
 import cn.itsource.hrm.util.PageList;
 import com.baomidou.mybatisplus.service.IService;
 
+import java.util.Map;
+
 /**
  * <p>
  *  服务类
@@ -33,4 +35,11 @@ public interface ICourseService extends IService<Course> {
      * @param ids
      */
     void offLine(Long[] ids);
+
+    /**
+     * 从es中查询数据
+     * @param query
+     * @return
+     */
+    PageList<Map<String,Object>> queryCourses(Map<String,Object> query);
 }

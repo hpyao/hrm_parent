@@ -24,10 +24,7 @@ import org.springframework.stereotype.Service;
 import rx.internal.util.unsafe.MpmcArrayQueue;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static sun.security.krb5.Confounder.longValue;
 
@@ -51,6 +48,59 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
     @Autowired
     private RedisClient redisClient;
 
+
+    @Override
+    public List<Map<String, Object>> getCrumbs(Long courseTypeId) {
+
+        List<Map<String,Object>> result = new ArrayList<>();
+        //1 获取path 1.2.3
+        CourseType courseType = courseTypeMapper.selectById(courseTypeId);
+        String path = courseType.getPath();
+
+        //2 截取path中各个节点自己  1 2 3
+        String[] paths = path.split("\\.");
+
+        //3 获取自己节点兄弟封装Map,放入List中进行返回
+        for (String ownerIdStr : paths) {
+            Map<String,Object> map = new HashMap<>();
+
+            Long ownerId = Long.valueOf(ownerIdStr);
+
+            System.out.println(ownerId);
+            //获取每个自己
+            CourseType owner =  courseTypeMapper.selectById(ownerId);
+            map.put("owner",owner);
+            //查询兄弟
+            //获取父亲所有儿子
+            List<CourseType> allChildren = courseTypeMapper
+                    .selectList(new EntityWrapper<CourseType>().eq("pid",owner.getPid()));
+
+            //干掉自己-边遍历边操作(正删改),要用迭代器
+            Iterator<CourseType> iterator = allChildren.iterator();
+            while (iterator.hasNext()){
+                CourseType currentType = iterator.next();
+                if (currentType.getId().longValue()==owner.getId().longValue()){
+                    iterator.remove();
+                    continue; //跳出当前循环
+                }
+            }
+            map.put("otherCourseTypes",allChildren);
+            result.add(map);
+        }
+        return result;
+    }
+
+
+    public static void main(String[] args) {
+        String path = "1.2.3";
+
+        //2 截取path中各个节点自己  1 2 3
+        String[] paths = path.split("\\.");
+        for (String s : paths) {
+            System.out.println(s);
+        }
+        System.out.println(paths.length);
+    }
     @Override
     public PageList<CourseType> selectListPage(CourseTypeQuery query) {
         Page page = new Page(query.getPage(),query.getRows()); //Page
@@ -168,6 +218,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         courseTypeMapper.insert(entity);
         List<CourseType> courseTypes = queryTypeTree(0L);
         courseTypeCache.setCourseTypes(courseTypes);
+
+        //同步页面静态化
+        this.InitCourseSiteIndex();
         return true;
     }
 
@@ -176,6 +229,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         courseTypeMapper.deleteById(id);
         List<CourseType> courseTypes = queryTypeTree(0L);
         courseTypeCache.setCourseTypes(courseTypes);
+
+        //同步页面静态化
+        this.InitCourseSiteIndex();
         return true;
     }
 
@@ -184,6 +240,9 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         courseTypeMapper.updateById(entity);
         List<CourseType> courseTypes = queryTypeTree(0L);
         courseTypeCache.setCourseTypes(courseTypes);
+
+        //同步页面静态化
+        this.InitCourseSiteIndex();
         return true;
     }
 }

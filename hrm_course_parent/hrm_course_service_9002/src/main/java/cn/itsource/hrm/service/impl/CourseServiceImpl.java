@@ -51,6 +51,8 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //批量修改状态
         //update t_course set status = 1,start_time=xxx where id in (1,2,3)
         mapper.batchOnline(Arrays.asList(ids));
+
+        // @TODO 页面静态化
     }
 
     @Override
@@ -61,6 +63,41 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //批量修改状态
         //update t_course set status = 1,start_time=xxx where id in (1,2,3)
         mapper.batchOffline(Arrays.asList(ids));
+
+        // @TODO 删除静态页面
+    }
+    @Override
+    public boolean deleteById(Serializable id) {
+
+        //删除数据库
+        mapper.deleteById(id);
+        //判断状态-还要删除索引库
+        Course course = mapper.selectById(id);
+        if (  course.getStatus() ==1)
+            esCourseClient.delete(Integer.valueOf(id.toString()));
+
+
+        // @TODO 同步删除静态页面
+        return true;
+
+    }
+
+    @Override
+    public boolean updateById(Course entity) {
+        //修改数据库
+        mapper.updateById(entity);
+        //判断状态-还要修改索引库
+        Course course = mapper.selectById(entity.getId());
+        if ( course.getStatus() ==1)
+            esCourseClient.save(course2EsCourse(entity));
+
+        // @TODO 同步修改-先删除后添加
+        return true;
+    }
+
+    @Override
+    public PageList<Map<String, Object>> queryCourses(Map<String,Object> query) {
+        return esCourseClient.query(query);
     }
 
     private List<EsCourse> courseList2EsCourse(List<Course> courseList) {
@@ -112,30 +149,9 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //课程详情
         entity.getDetail().setCourseId(entity.getId());
         detailMapper.insert(entity.getDetail());
+
         return true;
     }
 
-    @Override
-    public boolean deleteById(Serializable id) {
 
-        //删除数据库
-        mapper.deleteById(id);
-        //判断状态-还要删除索引库
-        Course course = mapper.selectById(id);
-        if (  course.getStatus() ==1)
-            esCourseClient.delete(Integer.valueOf(id.toString()));
-        return true;
-
-     }
-
-    @Override
-    public boolean updateById(Course entity) {
-        //修改数据库
-        mapper.updateById(entity);
-        //判断状态-还要修改索引库
-        Course course = mapper.selectById(entity.getId());
-        if ( course.getStatus() ==1)
-            esCourseClient.save(course2EsCourse(entity));
-        return true;
-    }
 }

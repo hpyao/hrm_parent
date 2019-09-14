@@ -2,26 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60afb834-2ae2-46bd-b99c-d6a5ebf9f014" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_2_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_2_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/config/FeignMultipartSupportConfig.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/hrm_basic_fastdfs_interface.iml" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/pom.xml" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/client/FastDfsClient.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/client/FastDfsClient.java" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/hrm_basic_fastdfs_service_9003.iml" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/src/main/java/cn/itsource/hrm/controller/FastDfsController.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/src/main/java/cn/itsource/hrm/controller/FastDfsController.java" />
-      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/src/main/java/cn/itsource/hrm/config/RabbitmqConfig.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/src/main/java/cn/itsource/hrm/config/RabbitmqConstants.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClient.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClient.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClientHystrixFallbackFactory.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClientHystrixFallbackFactory.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/IEsCourseService.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/IEsCourseService.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/impl/EsCourseServiceImpl.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/impl/EsCourseServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/web/controller/EsCourseController.java" afterPath="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/web/controller/EsCourseController.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_common/src/main/java/cn/itsource/hrm/query/CourseQuery.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_common/src/main/java/cn/itsource/hrm/query/CourseQuery.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseService.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseService.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseServiceImpl.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/hrm_page_agent_service_9007.iml" afterPath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/hrm_page_agent_service_9007.iml" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/config/RabbitmqConfig.java" afterPath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/config/RabbitmqConfig.java" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/handler/StaticPageDownloadHandler.java" afterPath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/handler/StaticPageDownloadHandler.java" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/bootstrap.yml" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/hrm_page_service_9006.iml" afterPath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/hrm_page_service_9006.iml" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/pom.xml" afterPath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/service/impl/PageConfigServiceImpl.java" afterPath="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/service/impl/PageConfigServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseController.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseController.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseTypeController.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseTypeController.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/ICourseTypeServiceTest.java" afterPath="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/ICourseTypeServiceTest.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527/src/main/java/cn/itsource/hrm/config/GlobalCorsConfig.java" afterPath="$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527/src/main/java/cn/itsource/hrm/config/GlobalCorsConfig.java" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/DepartmentClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/DepartmentClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/DepartmentClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/EmployeeClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/EmployeeClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/EmployeeClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MealClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MealClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MealClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MenuClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MenuClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/MenuClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/PermissionClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/PermissionClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/PermissionClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/RoleClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/RoleClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/RoleClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantTypeClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantTypeClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/target/classes/cn/itsource/hrm/client/TenantTypeClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/DepartmentClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/DepartmentClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/DepartmentClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/EmployeeClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/EmployeeClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/EmployeeClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MealClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MealClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MealClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MenuClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MenuClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/MenuClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/PermissionClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/PermissionClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/PermissionClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/RoleClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/RoleClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/RoleClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/SystemdictionaryitemClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantTypeClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantTypeClientHystrixFallbackFactory$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/target/classes/cn/itsource/hrm/client/TenantTypeClientHystrixFallbackFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_service/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_service/src/main/resources/logback-spring_bak.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,6 +171,7 @@
       <find>level=&quot;error&quot;</find>
       <find>页面管理中心</find>
       <find>pageConfigClient</find>
+      <find>CourseDoc</find>
     </findStrings>
     <replaceStrings>
       <replace>\\</replace>
@@ -135,6 +192,7 @@
       <replace>page</replace>
       <replace>level=&quot;debug&quot;</replace>
       <replace>页面代理</replace>
+      <replace>esCourse</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -153,21 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/config/Swagger2.java" />
-        <option value="$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527/src/main/java/cn/itsource/hrm/config/DocumentationConfig.java" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_client/pom.xml" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_common/pom.xml" />
-        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/pom.xml" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/handler/Staticpage.java" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/bootstrap_courseSite.yml" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/bootstrap_JobSite.yml" />
-        <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/PageAgent9007Application.java" />
-        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java" />
-        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/src/main/resources/fdfs_client.conf" />
-        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/util/ZipUtil.java" />
-        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/CourseServiceTest.java" />
-        <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_common/src/main/java/cn/itsource/hrm/domain/Pager.java" />
         <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_common/src/main/java/cn/itsource/hrm/domain/PageConfig.java" />
         <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_client/src/main/java/cn/itsource/hrm/client/PageConfigClientHystrixFallbackFactory.java" />
         <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/web/controller/PageConfigController.java" />
@@ -196,7 +239,6 @@
         <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_rabbitmq/src/main/java/cn/itsource/hrm/config/RabbitmqConstants.java" />
         <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/config/RabbitmqConfig.java" />
-        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/pom.xml" />
         <option value="$PROJECT_DIR$/hrm_page_agent_parent/hrm_page_agent_service_9007/src/main/java/cn/itsource/hrm/handler/StaticPageDownloadHandler.java" />
         <option value="$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/service/impl/PageConfigServiceImpl.java" />
@@ -204,6 +246,22 @@
         <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/client/FeignMultipartSupportConfig.java" />
         <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/client/FastDfsClient.java" />
         <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_service_9003/src/main/java/cn/itsource/hrm/controller/FastDfsController.java" />
+        <option value="$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/pom.xml" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/ICourseTypeServiceTest.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseTypeController.java" />
+        <option value="$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527/src/main/java/cn/itsource/hrm/config/GlobalCorsConfig.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClient.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClientHystrixFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_common/src/main/java/cn/itsource/hrm/query/CourseQuery.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/web/controller/EsCourseController.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/IEsCourseService.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/impl/EsCourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseService.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/doc/EsCourse.java" />
+        <option value="$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -257,6 +315,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,159 +325,10 @@
               <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_basic_parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_service_9002" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_service_9002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_service_9002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_service_9002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_course_service_9002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_page_service_9006" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,7 +396,7 @@
     </option>
     <option name="contentProportion" value="0.32355213" />
   </component>
-  <component name="RunManager" selected="JUnit.CourseServiceTest.testInitCourseSiteIndex">
+  <component name="RunManager" selected="JUnit.ICourseTypeServiceTest.testGetCrumbs">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -492,9 +404,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="GenteratorCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="GenteratorCode" />
+    <configuration name="CourseTypeServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.itsource.hrm.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.impl.CourseTypeServiceImpl" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -503,7 +420,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="hrm_mybatisplus_gen" />
+      <module name="hrm_course_service_9002" />
       <envs />
     </configuration>
     <configuration name="ZipUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -539,56 +456,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="CourseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.itsource.hrm.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hrm_course_service_9002" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.itsource.hrm.service" />
-      <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.CourseServiceTest" />
-      <option name="METHOD_NAME" value="testInitCourseSiteIndex" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CourseServiceTest.selectListPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.itsource.hrm.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hrm_course_service_9002" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.itsource.hrm.service" />
-      <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.CourseServiceTest" />
-      <option name="METHOD_NAME" value="selectListPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="CourseServiceTest.testInitCourseSiteIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -602,6 +469,56 @@
       <option name="PACKAGE_NAME" value="cn.itsource.hrm.service" />
       <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.CourseServiceTest" />
       <option name="METHOD_NAME" value="testInitCourseSiteIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ICourseTypeServiceTest.testGetCrumbs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.itsource.hrm.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hrm_course_service_9002" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.itsource.hrm.service" />
+      <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.ICourseTypeServiceTest" />
+      <option name="METHOD_NAME" value="testGetCrumbs" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ICourseTypeServiceTest.testStaticPageSys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.itsource.hrm.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hrm_course_service_9002" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.itsource.hrm.service" />
+      <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.service.ICourseTypeServiceTest" />
+      <option name="METHOD_NAME" value="testStaticPageSys" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -814,19 +731,19 @@
       <item index="7" class="java.lang.String" itemvalue="Spring Boot.Redis9005Application" />
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.Page9006Application" />
       <item index="9" class="java.lang.String" itemvalue="Spring Boot.PageAgent9007Application" />
-      <item index="10" class="java.lang.String" itemvalue="Application.GenteratorCode" />
-      <item index="11" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.testInitCourseSiteIndex" />
-      <item index="12" class="java.lang.String" itemvalue="JUnit.CourseServiceTest" />
-      <item index="13" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.selectListPage" />
-      <item index="14" class="java.lang.String" itemvalue="Application.ZipUtil" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.testInitCourseSiteIndex" />
+      <item index="11" class="java.lang.String" itemvalue="Application.ZipUtil" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.ICourseTypeServiceTest.testStaticPageSys" />
+      <item index="13" class="java.lang.String" itemvalue="Application.CourseTypeServiceImpl" />
+      <item index="14" class="java.lang.String" itemvalue="JUnit.ICourseTypeServiceTest.testGetCrumbs" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.testInitCourseSiteIndex" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ZipUtil" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.selectListPage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CourseServiceTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.GenteratorCode" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ICourseTypeServiceTest.testGetCrumbs" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CourseTypeServiceImpl" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ICourseTypeServiceTest.testStaticPageSys" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CourseServiceTest.testInitCourseSiteIndex" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ZipUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -861,43 +778,44 @@
       <workItem from="1568163808983" duration="18340000" />
       <workItem from="1568188456976" duration="10436000" />
       <workItem from="1568274522300" duration="4885000" />
+      <workItem from="1568422842199" duration="14172000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 19h 52m 22s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 09m 32s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 19h 57m 13s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 10m 27s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 19h 59m 33s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 11m 31s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 19h 59m 57s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 13m 05s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 20h 01m 17s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 14m 09s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 20h 05m 17s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 16m 12s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.11 at 20h 09m 33s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 16m 42s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.12 at 16h 38m 27s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 18m 42s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.12 at 16h 42m 02s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 19m 15s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseServiceTest_testInitCourseSiteIndex - 2019.09.12 at 16h 52m 51s.xml">
-      <configuration name="CourseServiceTest.testInitCourseSiteIndex" configurationId="JUnit" />
+    <history-entry file="ICourseTypeServiceTest_testGetCrumbs - 2019.09.14 at 11h 22m 22s.xml">
+      <configuration name="ICourseTypeServiceTest.testGetCrumbs" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150139000" />
+    <option name="totallyTimeSpent" value="164311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -931,10 +849,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79931974" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6683673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6717687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4977307" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -974,11 +892,11 @@
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79931974" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6683673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6717687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4977307" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1018,135 +936,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="1264" column="0" lean-forward="false" selection-start-line="1264" selection-start-column="0" selection-end-line="1264" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_fastdfs_interface/src/main/java/cn/itsource/hrm/client/FastDfsClientHystrixFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#782#783#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/cache/CourseTypeCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="49" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/java/cn/itsource/hrm/util/RedisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/java/cn/itsource/hrm/Redis9005Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_client/src/main/java/cn/itsource/hrm/client/RedisClientFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/java/cn/itsource/hrm/config/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_redis_service_9005/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/mapper/CourseTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1246">
-          <caret line="86" column="21" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="86" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/Page9006Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1189,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="26" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,15 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/ICourseTypeServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,7 +1066,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1299,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="59" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="23" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1371,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="44" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,6 +1164,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/CourseServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-654">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/web/controller/PageConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1401,33 +1198,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm_page_parent/hrm_page_service_9006/src/main/java/cn/itsource/hrm/service/impl/PageConfigServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="172" column="5" lean-forward="true" selection-start-line="152" selection-start-column="4" selection-end-line="172" selection-end-column="5" />
+        <state relative-caret-position="211">
+          <caret line="112" column="47" lean-forward="true" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/CourseServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/hrm_sysmanage_parent/hrm_sysmanage_service/src/main/java/cn/itsource/hrm/web/controller/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        <state relative-caret-position="400">
+          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/test/java/cn/itsource/hrm/service/ICourseTypeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="72" column="46" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="72" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="83" selection-start-column="2" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="-265">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="65" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="110" column="63" lean-forward="false" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="63" />
+          <folding>
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3171#3172#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_support_parent/hrm_zuul_9527/src/main/java/cn/itsource/hrm/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_common/src/main/java/cn/itsource/hrm/query/CourseQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_util/src/main/java/cn/itsource/hrm/query/BaseQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/IEsCourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/ICourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/doc/EsCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/web/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="133" column="41" lean-forward="false" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClientHystrixFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="e#1521#1522#0" expanded="false" />
+            <element signature="e#1564#1565#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_interface/src/main/java/cn/itsource/hrm/client/EsCourseClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="66" column="31" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="66" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/web/controller/EsCourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="122" column="5" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="122" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_basic_parent/hrm_basic_es_service_9004/src/main/java/cn/itsource/hrm/service/impl/EsCourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="195" column="5" lean-forward="true" selection-start-line="104" selection-start-column="3" selection-end-line="195" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_course_parent/hrm_course_service_9002/src/main/java/cn/itsource/hrm/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="95" selection-end-column="5" />
+          <folding>
+            <element signature="e#2989#2990#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

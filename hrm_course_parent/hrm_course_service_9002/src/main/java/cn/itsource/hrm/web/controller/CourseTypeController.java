@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.management.Query;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/courseType")
@@ -98,5 +99,16 @@ public class CourseTypeController {
     public List<CourseType> treeData(){
 
         return courseTypeService.queryTypeTree(0L);
+    }
+
+    /**
+     *  通过类型查询面包屑数据
+     *     有层次(Node): path
+     *     Node: 自己和兄弟  path里面就是自己 通过自己查询父亲,再通过父亲找到儿子,删除自己就ok
+     * @return
+     */
+    @RequestMapping(value = "/crumbs",method = RequestMethod.GET)
+    public List<Map<String,Object>> getCrumbs(Long courseTypeId){
+        return courseTypeService.getCrumbs(courseTypeId);
     }
 }

@@ -6,6 +6,7 @@ import cn.itsource.hrm.query.EsCourseQuery;
 import cn.itsource.hrm.util.PageList;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -32,4 +33,6 @@ public interface IEsCourseService {
     void batchSave(List<EsCourse> ids);
 
     void batchDel(List<EsCourse> esCourseList);
+
+    PageList<Map<String,Object>> query(Map<String, Object> params);
 }

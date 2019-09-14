@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -32,6 +33,16 @@ public class ICourseTypeServiceTest {
         }
     }
 
+    //页面静态化同步测试
+    @Test
+    public void testStaticPageSys()throws Exception{
+
+        CourseType type = new CourseType();
+        type.setPid(0L);
+        type.setName("jjfjfjfjj");
+        courseTypeService.insert(type);
+    }
+
     @Test
     public void testQueryTreeData()throws Exception{
 
@@ -44,6 +55,22 @@ public class ICourseTypeServiceTest {
                     System.out.println(child);
                 }
             }
+        }
+    }
+    
+    @Test
+    public void testGetCrumbs()throws Exception{
+        List<Map<String, Object>> crumbs = courseTypeService.getCrumbs(1040L);
+        for (Map<String, Object> crumb : crumbs) {
+
+            CourseType owner = (CourseType) crumb.get("owner");
+            List<CourseType> otherCourseTypes = (List<CourseType>) crumb.get("otherCourseTypes");
+            System.out.println(owner);
+            System.out.println("jjjjjjjjjjjjjjjjjjj");
+            for (CourseType otherCourseType : otherCourseTypes) {
+                System.out.println(otherCourseType);
+            }
+            System.out.println("======================================");
         }
     }
 }
